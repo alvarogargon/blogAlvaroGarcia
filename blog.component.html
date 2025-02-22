@@ -1,0 +1,20 @@
+<section class="plantas">
+    <h2 class="titulo">Floras y Floros Top-Mundial</h2>
+
+    <div class="plantasTop">
+
+        @for(planta of plantas; track planta) {
+            <article>
+                <h3 class="plantasTitulo">{{planta.titulo}}</h3>
+                <p class="plantasTexto"><strong>Descripción de la planta: </strong>{{planta.texto}}</p>
+                <figure>
+                    <img [src]="planta.imagen" [alt]="planta.titulo">
+                </figure>
+                <p class="plantasTipoDeHoja"><strong>Tipo de hoja: </strong>{{planta.tipoDeHoja}}</p>
+                <p class="plantasTipoDeLuz"><strong>Luz necesaria: </strong>{{planta.tipoDeLuzNecesaria}}</p>
+                <p class="plantasFecha"><strong>Fecha de descubrimiento: </strong>{{planta.fechaPublicacion}}</p>
+            </article>
+        }
+    </div>
+
+</section>

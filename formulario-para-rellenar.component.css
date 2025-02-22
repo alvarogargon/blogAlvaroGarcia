@@ -1,0 +1,46 @@
+.formulario {
+    padding: 0 25px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.formulario h2 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.formulario div {
+    margin: 10px 0px;
+}
+
+input {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #4CAF50;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+}
+
+@media (width <= 800px) {
+    .input {
+        width: 180px;
+    }
+    @media (max-width: 480px) {
+        input, textarea {
+            font-size: 14px;
+        }
+    }
+}

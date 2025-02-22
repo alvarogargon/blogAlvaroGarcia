@@ -1,0 +1,33 @@
+<header>
+  <h1>Flores y Floras</h1>
+</header>
+
+<main>
+
+  <div class="contenedor">
+
+    <section>
+
+      <!-- app-blog -->
+       
+      <app-blog [lasPlantas]="arrayPlantas">
+
+      </app-blog>
+
+    </section>
+
+  </div>
+
+  <aside>
+
+    <!-- app-formulario-para-rellenar -->
+
+    <app-formulario-para-rellenar (mandarPlanta)="getDataForm($event)">
+
+    </app-formulario-para-rellenar>
+
+  </aside>
+
+  <footer class="foot">©FloresYFloras</footer>
+
+</main>

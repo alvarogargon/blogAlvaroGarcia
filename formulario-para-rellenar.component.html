@@ -1,0 +1,48 @@
+<div class="formulario">
+    <h2>¡No te cortes, cuentanos la planta que has descubierto!</h2>
+
+    <div>
+
+        <label for="titulo"></label>
+        <input id="titulo" type="text" placeholder="Introduce el nombre de la planta." [(ngModel)] = "nuevaPlanta.titulo">
+
+    </div>
+
+    <div>
+
+        <label for="texto"></label>
+        <input id="texto" type="text" placeholder="Introduce la descripción de la planta." [(ngModel)] = "nuevaPlanta.texto">
+
+    </div>
+
+    <div>
+
+        <label for="imagen"></label>
+        <input id="imagen" type="text" placeholder="Introduce la URL de la imagen de la planta (http://...)" [(ngModel)] = "nuevaPlanta.imagen">
+
+    </div>
+
+    <div>
+
+        <label for="tipoDeHoja"></label>
+        <input id="tipoDeHoja" type="text" placeholder="Introduce el tipo de hoja de la planta" [(ngModel)] = "nuevaPlanta.tipoDeHoja">
+
+    </div>
+
+    <div>
+
+        <label for="tipoDeLuzNecesaria"></label>
+        <input id="tipoDeLuzNecesaria" type="text" placeholder="Introduce el tipo de luz necesaria para la planta" [(ngModel)] = "nuevaPlanta.tipoDeLuzNecesaria">
+
+    </div>
+
+    <div>
+
+        <label for="fechaPublicacion"></label>
+        <input id="fechaPublicacion" type="date" placeholder="Introduce la fecha de descubrimiento de la planta" [(ngModel)] = "nuevaPlanta.fechaPublicacion">
+
+    </div>
+
+    <button (click) = "getPlanta()">Publica!</button>
+
+</div>
